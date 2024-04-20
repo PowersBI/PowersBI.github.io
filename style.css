@@ -201,17 +201,17 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    /* Adjustments for Header and Navigation */
+    /* Header adjustments for mobile */
     header {
         position: static;
         padding: 10px 0;
         font-size: 1.5em;
     }
 
+    /* Navigation adjustments for mobile */
     nav {
         position: static;
         padding: 10px 0;
-        background: #284b63; /* Consistent with your primary color */
     }
 
     nav ul li {
@@ -221,7 +221,7 @@ footer a:hover {
 
     nav ul li a {
         display: block;
-        padding: 10px; /* Making links easier to tap */
+        padding: 10px;
     }
 
     /* About section adjustments for better layout */
@@ -237,7 +237,7 @@ footer a:hover {
     }
 
     .headshot {
-        width: 100%; /* Ensures full container width is used */
+        width: 100%;
     }
 
     .about-text {
@@ -257,14 +257,15 @@ footer a:hover {
     }
 
     .service-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%; /* Adjustment for better mobile visibility */
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent for readability */
-        padding: 10px;
-        box-sizing: border-box;
-        text-align: center;
+        position: relative; /* Changes position to flow naturally in the document */
+        top: auto; /* Resets the top position */
+        left: auto; /* Resets the left position */
+        transform: none; /* Removes transformation */
+        width: 100%; /* Takes full width */
+        padding: 10px; /* Adjust padding for smaller screen */
+        margin-top: 20px; /* Adds some space between the image and the text */
+        text-align: center; /* Center-align the text */
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for legibility */
+        box-sizing: border-box; /* Ensures padding is included in the width calculation */
     }
 }
