@@ -201,54 +201,53 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    /* Header adjustments for mobile */
-    header {
-        position: static; /* Non-fixed position on small screens */
-        padding: 10px 0;
-        font-size: 1.5em; /* Smaller font size for smaller screens */
+    header, nav {
+        position: static; /* Switch to static positioning */
+        width: 100%; /* Make sure it covers full width */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 1em; /* Adjust font size for readability */
     }
 
-    /* Navigation adjustments for mobile */
-    nav {
-        position: static; /* Non-fixed position on small screens */
-        top: auto;
-        background: #284b63;
-        padding: 10px 0;
+    nav ul {
+        padding: 0;
+        text-align: center; /* Center align the links */
     }
 
     nav ul li {
-        display: block; /* Stack the navigation items vertically */
-        margin: 10px 0;
+        display: block; /* Stack the links vertically */
+        margin: 0; /* Remove margins to align properly */
     }
 
-    /* About section adjustments for mobile */
+    nav ul li a {
+        display: block; /* Make the links block to fill horizontal space */
+        padding: 10px; /* Easier to tap on mobile */
+    }
+
     #about {
-        flex-direction: column; /* Stack the headshot and text vertically */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center-align children */
     }
 
     .headshot-container {
-        max-width: 50%; /* Adjust the headshot size for mobile */
-        margin: 0 auto; /* Center the headshot */
+        width: 100%; /* Full width on mobile */
+        max-width: 200px; /* Limit headshot size */
+    }
+
+    .headshot {
+        width: 100%; /* Headshot fills container */
     }
 
     .about-text {
-        padding: 20px; /* Add padding around the text */
+        padding: 20px; /* More padding around text */
     }
 
-    /* Services section adjustments retained and expanded from your existing code */
-    .services-flex-container {
-        flex-direction: column; /* Stacks flex items vertically */
-    }
-
-    .service-image, .service-content {
-        max-width: 100%; /* Allows each section to take full width of the container */
+    .service-container, .service-content {
+        width: 100%; /* Full width */
+        text-align: center; /* Center content */
     }
 
     .service-content {
-        position: relative; /* Switch back to normal flow */
-        top: auto;
-        left: auto;
-        transform: none;
+        position: relative; /* Default positioning */
+        transform: none; /* Remove transformation */
     }
 }
-
