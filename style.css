@@ -165,9 +165,15 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    position: fixed; /* Change position to fixed */
+    bottom: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Adjust the padding bottom to accommodate the footer height */
 }
 
 footer p {
