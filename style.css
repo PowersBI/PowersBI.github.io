@@ -201,14 +201,13 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    /* Header adjustments for mobile */
+    /* Header and Navigation adjustments */
     header {
         position: static;
         padding: 10px 0;
         font-size: 1.5em;
     }
 
-    /* Navigation adjustments for mobile */
     nav {
         position: static;
         padding: 10px 0;
@@ -224,7 +223,7 @@ footer a:hover {
         padding: 10px;
     }
 
-    /* About section adjustments for better layout */
+    /* About section layout adjustments */
     #about {
         flex-direction: column;
         align-items: center;
@@ -232,7 +231,7 @@ footer a:hover {
 
     .headshot-container {
         width: 100%;
-        max-width: 200px; /* Limiting size while centering */
+        max-width: 200px;
         margin: 0 auto;
     }
 
@@ -244,7 +243,7 @@ footer a:hover {
         padding: 20px;
     }
 
-    /* Services section with updated positioning for content */
+    /* Service section image and content layout adjustments */
     .service-container {
         position: relative;
         overflow: hidden;
@@ -257,15 +256,35 @@ footer a:hover {
     }
 
     .service-content {
-        position: relative; /* Changes position to flow naturally in the document */
-        top: auto; /* Resets the top position */
-        left: auto; /* Resets the left position */
-        transform: none; /* Removes transformation */
-        width: 100%; /* Takes full width */
-        padding: 10px; /* Adjust padding for smaller screen */
-        margin-top: 20px; /* Adds some space between the image and the text */
-        text-align: center; /* Center-align the text */
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for legibility */
-        box-sizing: border-box; /* Ensures padding is included in the width calculation */
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Adjustments for the service description text */
+    .service-content p {
+        font-size: 1em; /* Smaller font size for mobile */
+        text-align: center; /* Ensure it is centered */
+        padding: 0 10px; /* Add some padding for better text fit */
+    }
+
+    /* Adjustments for the service list */
+    .service-content ul {
+        width: 100%; /* Ensures the list takes full width */
+        padding: 0; /* Removes any default padding */
+        list-style-type: none; /* Removes bullet points */
+        text-align: center; /* Centers the list */
+    }
+
+    .service-content li {
+        text-align: center; /* Ensures each list item is centered */
+        padding: 5px 0; /* Adds padding for touch targets */
     }
 }
