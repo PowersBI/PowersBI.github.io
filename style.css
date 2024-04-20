@@ -120,50 +120,44 @@ section h2 {
 }
 
 .service-container {
-    position: relative;  /* Establishes a positioning context */
-    width: 100%;  /* Full width of the section */
-    display: block; /* Ensures it behaves as a block-level element */
+    position: relative; /* Keeps the relative positioning */
+    width: 100%; /* Full width of the container */
+    display: block; /* Standard block display */
 }
 
 .service-image {
-    width: 100%;  /* Makes the image fill the container */
-    height: auto;  /* Maintains the aspect ratio */
-    display: block; /* Ensures the image does not have any inline properties */
+    width: 100%; /* Ensures the image covers the full width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Block display removes bottom margin/padding */
 }
 
 .service-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Ensures text is visible on darker backgrounds */
-    text-align: center;
-    width: calc(100% - 40px); /* Adjusted width to account for the 20px padding on each side */
-    animation: fadeIn 2s;
-    background: rgba(0, 0, 0, 0.5); /* Adds a dark semi-transparent background */
-    padding: 20px;
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    position: absolute; /* Absolutely position it relative to service-container */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    width: 100%; /* Full width */
+    background: rgba(0, 0, 0, 0.5); /* Optional: keeps the background if desired */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the content */
+    box-sizing: border-box; /* Includes padding in the width */
+    text-align: left; /* Align text to the left */
 }
 
-
-/* New CSS for adjusting font sizes and list styles */
 .service-content h2 {
-    font-size: 3em; /* Increases the font size for "Our Services" */
-    color: white; /* Makes the text white */
+    color: white; /* Ensures heading is visible on potential dark background */
 }
 
-.service-content p {
-    font-size: 1.5em; /* Increases the font size for the paragraph */
-    margin: 20px 0; /* Adds some vertical spacing */
+.service-content p, .service-content ul {
+    color: white; /* Ensures text is visible */
 }
 
 .service-content ul {
-    list-style: none; /* Removes the bullet points */
+    list-style: disc inside; /* Enables bullet points, positioned inside to avoid margin issues */
+    padding-left: 20px; /* Adds some space inside the list */
 }
 
 .service-content li {
-    font-size: 1.2em; /* Increases the font size for the list items */
-    margin-bottom: 10px; /* Adds some spacing between list items */
+    margin-bottom: 10px; /* Adds space between list items */
 }
 
 
