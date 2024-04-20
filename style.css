@@ -88,39 +88,40 @@ section h2 {
     color: #3c6e71; /* Deep Jungle Green */
 }
 
-#services {
-    position: relative;
-    width: 100%; /* Adjust the width as necessary */
-    height: auto; /* Adjust based on your image's aspect ratio */
+.service-container {
+    position: relative;  /* Establishes a positioning context */
+    width: 100%;  /* Full width of the section */
+    display: block; /* Ensures it behaves as a block-level element */
 }
 
 .service-image {
-    width: 100%;
-    height: auto;
-    display: block; /* Ensures the image takes up the full container width */
+    width: 100%;  /* Makes the image fill the container */
+    height: auto;  /* Maintains the aspect ratio */
+    display: block; /* Ensures the image does not have any inline properties */
 }
 
 .service-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Ensures text is visible on darker backgrounds */
-    text-align: center;
-    width: 100%; /* Adjust text width inside the image */
-    animation: fadeIn 2s;
-    background: rgba(0, 0, 0, 0.5); /* Adds a dark semi-transparent background */
+    position: absolute;  /* Positions the content absolutely relative to its nearest positioned ancestor */
+    top: 0;  /* Aligns the top edge of the content with the container */
+    left: 0;  /* Aligns the left edge of the content with the container */
+    width: 100%;  /* Extends the content across the full width of the container */
+    height: 100%;  /* Matches the height to the image */
+    color: white;  /* Ensures text is visible on darker backgrounds */
+    text-align: center;  /* Centers the text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centers the text vertically */
+    background: rgba(0, 0, 0, 0.5);  /* Adds a semi-transparent black background for text readability */
     padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width/height calculations */
+    animation: fadeIn 2s;  /* Fade-in effect for a smooth appearance */
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
+
 
 
 /* Footer styles */
