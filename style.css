@@ -5,8 +5,10 @@ header {
     left: 0; /* Aligns the header to the left side of the page */
     width: 100%; /* Ensures the header stretches across the full viewport width */
     background-color: #3c6e71; /* Deep Jungle Green */
+    margin: 0;
+    font-size: 2em;
     color: #ffffff;
-    padding: 20px 40px;
+    padding: 20px 0px;
     text-align: center;
     z-index: 1000; /* Ensures the header is always on top of other content */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for better separation from page content */
