@@ -201,53 +201,70 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    header, nav {
-        position: static; /* Switch to static positioning */
-        width: 100%; /* Make sure it covers full width */
-        padding: 10px; /* Adjust padding for smaller screens */
-        font-size: 1em; /* Adjust font size for readability */
+    /* Adjustments for Header and Navigation */
+    header {
+        position: static;
+        padding: 10px 0;
+        font-size: 1.5em;
     }
 
-    nav ul {
-        padding: 0;
-        text-align: center; /* Center align the links */
+    nav {
+        position: static;
+        padding: 10px 0;
+        background: #284b63; /* Consistent with your primary color */
     }
 
     nav ul li {
-        display: block; /* Stack the links vertically */
-        margin: 0; /* Remove margins to align properly */
+        display: block;
+        margin: 10px 0;
     }
 
     nav ul li a {
-        display: block; /* Make the links block to fill horizontal space */
-        padding: 10px; /* Easier to tap on mobile */
+        display: block;
+        padding: 10px; /* Making links easier to tap */
     }
 
+    /* About section adjustments for better layout */
     #about {
-        flex-direction: column; /* Stack children vertically */
-        align-items: center; /* Center-align children */
+        flex-direction: column;
+        align-items: center;
     }
 
     .headshot-container {
-        width: 100%; /* Full width on mobile */
-        max-width: 200px; /* Limit headshot size */
+        width: 100%;
+        max-width: 200px; /* Limiting size while centering */
+        margin: 0 auto;
     }
 
     .headshot {
-        width: 100%; /* Headshot fills container */
+        width: 100%; /* Ensures full container width is used */
     }
 
     .about-text {
-        padding: 20px; /* More padding around text */
+        padding: 20px;
     }
 
-    .service-container, .service-content {
-        width: 100%; /* Full width */
-        text-align: center; /* Center content */
+    /* Services section with updated positioning for content */
+    .service-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .service-image {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .service-content {
-        position: relative; /* Default positioning */
-        transform: none; /* Remove transformation */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; /* Adjustment for better mobile visibility */
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent for readability */
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
     }
 }
