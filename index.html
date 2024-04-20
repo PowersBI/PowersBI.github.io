@@ -50,8 +50,12 @@
         <p>Contact Me for a consultation:</p>
         <p>Email: <a href="mailto:ppowers@powersbi.org">ppowers@powersbi.org</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/percivalpowers">Visit my LinkedIn</a></p>
+        <p>&copy; <span id="currentYear"></span> Percival Powers - Power BI Consulting. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script> 
+    <script>
+    // Update copyright year dynamically
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+    </script>
 </body>
 </html>
