@@ -209,8 +209,12 @@ footer a:hover {
     }
 
     nav {
-        position: static;
+        position: static;   /* Changes the positioning to static for better control */
+        top: 0;             /* Adjusts the top position to align with the header */
+        left: 0;            /* Ensures it aligns to the left edge of the viewport */
+        width: 100%;        /* Ensures it stretches across the full width of the viewport */
         padding: 10px 0;
+        background: #99c9cb; /* Maintains the background color across different screen sizes */
     }
 
     nav ul li {
