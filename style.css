@@ -16,7 +16,7 @@ header {
 /* Navigation styles */
 nav {
     position: fixed; /* Fixes the navigation bar at the top of the viewport */
-    top: 68px; /* Adjust this value based on the actual height of your header */
+    top: 100px; /* Adjusted to align with the bottom of the header */
     left: 0; /* Aligns the navigation to the left side of the page */
     width: 100%; /* Ensures the navigation stretches across the full viewport width */
     background: #353535; /* Davys Grey */
@@ -25,6 +25,7 @@ nav {
     padding: 10px 0;
     z-index: 1000; /* Ensures the navigation bar is always on top of other content */
 }
+
 
 /* General body styles */
 body {
