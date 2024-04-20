@@ -165,6 +165,18 @@ section h2 {
     margin-bottom: 10px; /* Adds some spacing between list items */
 }
 
+.headshot-container {
+    float: left; /* Aligns the container to the left */
+    margin-right: 20px; /* Adjust as needed to create space between the image and text */
+}
+
+.headshot {
+    width: 150px; /* Adjust the size of the headshot image */
+    height: 150px;
+    border-radius: 50%; /* Creates a circular frame */
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
 
 /* Footer styles */
 footer {
