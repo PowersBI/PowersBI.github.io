@@ -18,7 +18,7 @@ nav {
     top: 68px; /* Adjust this value based on the actual height of your header */
     left: 0; /* Aligns the navigation to the left side of the page */
     width: 100%; /* Ensures the navigation stretches across the full viewport width */
-    background: #284b63; /* Prussian Blue */
+    background: #353535; /* Davys Grey */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
