@@ -5,15 +5,13 @@ header {
     left: 0; /* Aligns the header to the left side of the page */
     width: 100%; /* Ensures the header stretches across the full viewport width */
     background-color: #3c6e71; /* Deep Jungle Green */
-    margin: 60px 0 0; /* Adjust the top margin to create space between the header and the title */
     font-size: 2em;
     color: #ffffff;
-    padding: 20px 0px;
+    padding: 20px 0;
     text-align: center;
     z-index: 1000; /* Ensures the header is always on top of other content */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for better separation from page content */
 }
-
 
 /* Navigation styles */
 nav {
@@ -48,6 +46,7 @@ header p {
     font-size: 1.2em;
     margin-top: 10px;
 }
+
 
 /* Navigation styles */
 nav {
