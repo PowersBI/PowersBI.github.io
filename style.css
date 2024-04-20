@@ -107,11 +107,13 @@ section h2 {
     transform: translate(-50%, -50%);
     color: white; /* Ensures text is visible on darker backgrounds */
     text-align: center;
-    width: 100%; /* Adjust text width inside the image */
+    width: calc(100% - 40px); /* Adjusted width to account for the 20px padding on each side */
     animation: fadeIn 2s;
     background: rgba(0, 0, 0, 0.5); /* Adds a dark semi-transparent background */
     padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
 }
+
 
 /* New CSS for adjusting font sizes and list styles */
 .service-content h2 {
