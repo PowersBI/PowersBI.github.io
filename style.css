@@ -38,7 +38,7 @@ body {
 
 
 header h1 {
-    margin: 20px auto;
+    margin: 0 auto;
     font-size: 2em;
 }
 
@@ -46,6 +46,7 @@ header p {
     font-size: 1.2em;
     margin-top: 10px;
 }
+
 
 
 /* Navigation styles */
