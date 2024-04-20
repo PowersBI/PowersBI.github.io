@@ -70,13 +70,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #292929;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #e3b5a5;
+    color: #22324c;
     text-decoration: underline;
 }
 
