@@ -201,6 +201,41 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    /* Header adjustments for mobile */
+    header {
+        position: static; /* Non-fixed position on small screens */
+        padding: 10px 0;
+        font-size: 1.5em; /* Smaller font size for smaller screens */
+    }
+
+    /* Navigation adjustments for mobile */
+    nav {
+        position: static; /* Non-fixed position on small screens */
+        top: auto;
+        background: #284b63;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block; /* Stack the navigation items vertically */
+        margin: 10px 0;
+    }
+
+    /* About section adjustments for mobile */
+    #about {
+        flex-direction: column; /* Stack the headshot and text vertically */
+    }
+
+    .headshot-container {
+        max-width: 50%; /* Adjust the headshot size for mobile */
+        margin: 0 auto; /* Center the headshot */
+    }
+
+    .about-text {
+        padding: 20px; /* Add padding around the text */
+    }
+
+    /* Services section adjustments retained and expanded from your existing code */
     .services-flex-container {
         flex-direction: column; /* Stacks flex items vertically */
     }
@@ -208,4 +243,12 @@ footer a:hover {
     .service-image, .service-content {
         max-width: 100%; /* Allows each section to take full width of the container */
     }
+
+    .service-content {
+        position: relative; /* Switch back to normal flow */
+        top: auto;
+        left: auto;
+        transform: none;
+    }
 }
+
