@@ -143,6 +143,25 @@ section h2 {
     to { opacity: 1; }
 }
 
+/* New CSS for adjusting font sizes and list styles */
+.service-content h2 {
+    font-size: 3em; /* Increases the font size for "Our Services" */
+    color: white; /* Makes the text white */
+}
+
+.service-content p {
+    font-size: 1.5em; /* Increases the font size for the paragraph */
+    margin: 20px 0; /* Adds some vertical spacing */
+}
+
+.service-content ul {
+    list-style: none; /* Removes the bullet points */
+}
+
+.service-content li {
+    font-size: 1.2em; /* Increases the font size for the list items */
+    margin-bottom: 10px; /* Adds some spacing between list items */
+}
 
 
 /* Footer styles */
