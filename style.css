@@ -1,19 +1,42 @@
-/* General body styles */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #220c10; /* Onyx for text */
-    background-color: #cdd3d5; /* Light Gray for background */
-    margin: 0;
-    padding: 0;
-}
-
 /* Header styles */
 header {
-    background-color: #506c64; /* Deep Jungle Green */
+    position: fixed; /* Fixes the header at the top of the viewport */
+    top: 0; /* Aligns the header at the very top of the page */
+    left: 0; /* Aligns the header to the left side of the page */
+    width: 100%; /* Ensures the header stretches across the full viewport width */
+    background-color: #3c6e71; /* Deep Jungle Green */
     color: #ffffff;
     padding: 20px 40px;
     text-align: center;
+    z-index: 1000; /* Ensures the header is always on top of other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow for better separation from page content */
 }
+
+/* Navigation styles */
+nav {
+    position: fixed; /* Fixes the navigation bar at the top of the viewport */
+    top: 68px; /* Adjust this value based on the actual height of your header */
+    left: 0; /* Aligns the navigation to the left side of the page */
+    width: 100%; /* Ensures the navigation stretches across the full viewport width */
+    background: #284b63; /* Prussian Blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensures the navigation bar is always on top of other content */
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #353535; /* Davys Grey for text */
+    background-color: #ffffff; /* White for background */
+    margin: 0;
+    padding: 0;
+    padding-top: 140px; /* Adds padding to the top of the body to prevent content from hiding behind the fixed header and nav */
+}
+
+/* Other styles remain unchanged */
+
 
 header h1 {
     margin: 0;
@@ -27,7 +50,7 @@ header p {
 
 /* Navigation styles */
 nav {
-    background: #75b8c8; /* Beau Blue */
+    background: #284b63; /* Prussian Blue */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -51,48 +74,25 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #77cbb9; /* Medium Turquoise */
+    color: #d9d9d9; /* Gainsboro */
     text-decoration: underline;
 }
 
 /* Section styles */
 section {
     margin: 20px 40px;
-    background: #ffffff; /* White background for sections */
+    background: #ffffff; /* White for section backgrounds */
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 section h2 {
-    color: #506c64; /* Deep Jungle Green */
-}
-
-/* Flex container for services section */
-.services-flex-container {
-    display: flex;
-    align-items: center; /* Aligns items vertically center */
-    justify-content: center; /* Centers items horizontally */
-    gap: 20px; /* Adds space between the image and text */
-}
-
-.service-image {
-    flex: 1; /* Takes up 1 portion of the flex container */
-    max-width: 50%; /* Maximum width of the image container */
-}
-
-.service-content {
-    flex: 2; /* Takes up 2 portions of the flex container, making it larger than the image container */
-    padding: 20px; /* Adds padding inside the text container */
-}
-
-.service-image img {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Keeps the aspect ratio of the image */
+    color: #3c6e71; /* Deep Jungle Green */
 }
 
 /* Footer styles */
 footer {
-    background-color: #77cbb9; /* Medium Turquoise */
+    background-color: #284b63; /* Prussian Blue */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
@@ -106,7 +106,7 @@ footer p {
 }
 
 footer a {
-    color: #75b8c8; /* Beau Blue */
+    color: #d9d9d9; /* Gainsboro */
     text-decoration: none;
 }
 
