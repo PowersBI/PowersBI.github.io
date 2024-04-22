@@ -126,10 +126,9 @@ section h2 {
 }
 
 .service-image {
-    width: 50%;  /* Adjusts the width to be 50% of its container */
-    height: auto;  /* Maintains the aspect ratio */
-    display: block;
-    margin: 0 auto;  /* Centers the image within the container */
+    width: 100%; /* Ensures the image covers the full width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Block display removes bottom margin/padding */
 }
 
 
